@@ -28,7 +28,7 @@ class MidiWrapper extends Component {
   }
 
   render() {
-    if (this.state.midiInputs !== [] && this.state.midiOutputs) {
+    if (this.state.midiInputs !== [] && this.state.midiOutputs !== []) {
       return (
         <Fragment>
           <DisplayInputs inputs={this.state.midiInputs} />
